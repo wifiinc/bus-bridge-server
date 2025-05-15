@@ -1,0 +1,5 @@
+if(EXISTS "/mnt/c/Users/timos/Documents/C++/bus-bridge-server/build/tests/test_math[1]_tests.cmake")
+  include("/mnt/c/Users/timos/Documents/C++/bus-bridge-server/build/tests/test_math[1]_tests.cmake")
+else()
+  add_test(test_math_NOT_BUILT test_math_NOT_BUILT)
+endif()

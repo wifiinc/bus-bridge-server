@@ -1,4 +1,4 @@
-#include "co2slave.h"
+#include "CO2Slave.h"
 
 CO2Slave::CO2Slave(int id) : BaseSlave() {}
 void* CO2Slave::getData() {return nullptr;}

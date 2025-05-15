@@ -1,7 +1,9 @@
 #include "SlaveManager.h"
 #include "CO2Slave.h"
+#include <cstdint>
 
 void SlaveManager::ledControl(uint8_t led_number, uint8_t led_state) {}
+
 void SlaveManager::createSlave(int type, int id) {
     BaseSlave* newSlave = nullptr;
     switch (type) {
