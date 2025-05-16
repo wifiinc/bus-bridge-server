@@ -16,8 +16,6 @@ class BusServer {
     private:
         int listening_fd;
         struct sockaddr_in listening_address;
-
         bool wemos_bridge_connected = false;
         char buffer[BUFFER_SIZE];
-        WemosClient wemos_client;
     };
