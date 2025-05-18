@@ -1,7 +1,0 @@
-add_test([=[MathTest.Add]=]  [==[/mnt/c/Users/timos/Documents/C++/bus-bridge-server/build/tests/test_math]==] [==[--gtest_filter=MathTest.Add]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[MathTest.Add]=]  PROPERTIES WORKING_DIRECTORY [==[/mnt/c/Users/timos/Documents/C++/bus-bridge-server/build/tests]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[MathTest.Subtract]=]  [==[/mnt/c/Users/timos/Documents/C++/bus-bridge-server/build/tests/test_math]==] [==[--gtest_filter=MathTest.Subtract]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[MathTest.Subtract]=]  PROPERTIES WORKING_DIRECTORY [==[/mnt/c/Users/timos/Documents/C++/bus-bridge-server/build/tests]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[MathTest.SubtractNegative]=]  [==[/mnt/c/Users/timos/Documents/C++/bus-bridge-server/build/tests/test_math]==] [==[--gtest_filter=MathTest.SubtractNegative]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[MathTest.SubtractNegative]=]  PROPERTIES WORKING_DIRECTORY [==[/mnt/c/Users/timos/Documents/C++/bus-bridge-server/build/tests]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  test_math_TESTS MathTest.Add MathTest.Subtract MathTest.SubtractNegative)
