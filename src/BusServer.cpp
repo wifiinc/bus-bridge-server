@@ -7,11 +7,11 @@
 #include <cstring>
 #include <stdexcept>
 
+#include "RGBSlave.h"
 #include "packets.h"
 #include "wiringPi.h"
 #include "wiringPiI2C.h"
 
-#include "RGBSlave.h"
 
 #define RGB_SLAVE_ADDRESS 0x42
 

@@ -1,5 +1,8 @@
 #include "SlaveManager.h"
 
+#include <wiringPi.h>
+#include <wiringPiI2C.h>
+
 #include <cstdint>
 #include <stdexcept>
 
@@ -8,8 +11,7 @@
 #include "RGBSlave.h"
 #include "packets.h"
 
-#include <wiringPi.h>
-#include <wiringPiI2C.h>
+
 
 #define MASTER_ADDRESS 0x01
 

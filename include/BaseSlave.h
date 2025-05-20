@@ -4,7 +4,7 @@
 #include <wiringPiI2C.h>
 
 class BaseSlave {
-public:
+    public:
     virtual ~BaseSlave() = default;
     virtual void* getData() = 0;
     virtual void* getStatus() = 0;

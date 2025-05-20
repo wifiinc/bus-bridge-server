@@ -1,5 +1,6 @@
-#include "BusServer.h"
 #include <string>
+
+#include "BusServer.h"
 
 int main() {
     BusServer bus_server;
