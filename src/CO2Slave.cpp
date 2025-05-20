@@ -14,6 +14,6 @@ int CO2Slave::getId() { return id; }
 
 void CO2Slave::setData(void* data) {}
 
-void CO2Slave::start() {}
+void CO2Slave::start(int i2c_fd) {}
 
 void CO2Slave::stop() {}

@@ -11,7 +11,7 @@ class CO2Slave : public BaseSlave {
     void* getStatus() override;
     int getId() override;
     void setData(void* data) override;
-    void start() override;
+    void start(int i2c_fd) override;
     void stop() override;
 
    private:

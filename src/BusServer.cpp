@@ -11,8 +11,12 @@
 #include "wiringPi.h"
 #include "wiringPiI2C.h"
 
+#include "RGBSlave.h"
+
+#define RGB_SLAVE_ADDRESS 0x42
+
 void BusServer::setup(std::string ip, int port) {
-    slave_manager.initialize();
+    // slave_manager.initialize();
 
     memset(&listening_address, 0, sizeof(listening_address));
 
@@ -70,11 +74,14 @@ void BusServer::send(struct sensor_packet* packet_ptr, int fd) {
 
 void BusServer::start() {
     // start off by mapping pre-known addresses to ID's
-    slave_manager.createSlave(SensorType::RGB_LIGHT, 8, 0x42 /* change to actual ID */);
+    slave_manager.createSlave(SensorType::RGB_LIGHT, 128, RGB_SLAVE_ADDRESS);
 
     listen();
 
     while (true) {
+        char buffer[32] = { 0 };
+        bool net_request = false;
+
         {
             struct sockaddr_in client_address = {0};
             socklen_t client_address_length;
@@ -94,13 +101,44 @@ void BusServer::start() {
                         throw std::runtime_error("accept4() failed");
                         break;
                 }
+            } else {
+                if (-1 == recv(new_fd, buffer, sizeof(buffer), 0)) {
+                    int err = errno;
+                    perror("recv()");
+                    throw std::runtime_error("reading from client socket failed for some reason");
+                } else {
+                    net_request = true;
+                }
             }
         }
 
-        {
-            /*
-             * more slave_manager stuff here
-             */
+        if (net_request) {
+
+            struct sensor_packet* pkt_ptr = (struct sensor_packet*)buffer;
+            BaseSlave* the_slave = slave_manager.getSlave(pkt_ptr->data.generic.metadata.sensor_id);
+            uint8_t values[8] = { 0 };
+
+            switch (pkt_ptr->header.ptype){
+                case PacketType::DASHBOARD_POST:
+                    switch (pkt_ptr->data.generic.metadata.sensor_type) {
+                        case SensorType::LIGHT:
+                            values[0] = pkt_ptr->data.light.target_state;
+
+                            the_slave->setData(values);
+                            break;
+
+                        case SensorType::RGB_LIGHT:
+                            struct RGBData rgb_data = {.on = 255, .R = pkt_ptr->data.rgb_light.red_state, .G = pkt_ptr->data.rgb_light.green_state, .B = pkt_ptr->data.rgb_light.blue_state};
+
+                            the_slave->setData(&rgb_data);
+                            break;
+                    }
+                    break;
+                case PacketType::DASHBOARD_GET:
+
+                    break;
+            }
+
         }
     }
 }

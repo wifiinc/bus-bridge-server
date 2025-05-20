@@ -6,6 +6,7 @@
 #include "BaseSlave.h"
 #include "packets.h"
 
+
 class SlaveManager {
    public:
     SlaveManager();
@@ -42,6 +43,9 @@ class SlaveManager {
 
    private:
     bool initialized = false;
+
+    uint8_t address = 0x01;
+    int i2c_fd = -1;
 
     std::map<int, BaseSlave*> slaves;  // maps ID to BaseSlave ptr
 };

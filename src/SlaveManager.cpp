@@ -8,19 +8,21 @@
 #include "RGBSlave.h"
 #include "packets.h"
 
-SlaveManager::SlaveManager() {}
+#include <wiringPi.h>
+#include <wiringPiI2C.h>
+
+#define MASTER_ADDRESS 0x01
+
+SlaveManager::SlaveManager() : address(MASTER_ADDRESS) {}
 
 void SlaveManager::initialize() {
-    /*
-     * WiringPI setup here;
-     */
+    //maybe need setup not sure.
 
-    /* if (setup_failed) {
-     *  throw std::runtime_error("I2C setup failed")
-     * };
-     */
+    i2c_fd = wiringPiI2CSetup(address);
 
-    throw std::runtime_error("SlaveManager::initialize() not implemented yet");
+    if (-1 == i2c_fd) {
+        throw std::runtime_error("I2C setup failed");
+    };
 }
 
 void SlaveManager::ledControl(uint8_t led_number, uint8_t led_state) {}
@@ -49,4 +51,8 @@ void SlaveManager::deleteSlave(uint8_t id) {
          */
         delete slaves[id];
     }
+}
+
+BaseSlave* SlaveManager::getSlave(int id) {
+	return slaves[id];
 }
