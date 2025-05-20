@@ -79,7 +79,7 @@ void BusServer::start() {
     listen();
 
     while (true) {
-        char buffer[32] = { 0 };
+        char buffer[32] = {0};
         bool net_request = false;
 
         {
@@ -116,9 +116,9 @@ void BusServer::start() {
 
             struct sensor_packet* pkt_ptr = (struct sensor_packet*)buffer;
             BaseSlave* the_slave = slave_manager.getSlave(pkt_ptr->data.generic.metadata.sensor_id);
-            uint8_t values[8] = { 0 };
+            uint8_t values[8] = {0};
 
-            switch (pkt_ptr->header.ptype){
+            switch (pkt_ptr->header.ptype) {
                 case PacketType::DASHBOARD_POST:
                     switch (pkt_ptr->data.generic.metadata.sensor_type) {
                         case SensorType::LIGHT:
@@ -128,7 +128,10 @@ void BusServer::start() {
                             break;
 
                         case SensorType::RGB_LIGHT:
-                            struct RGBData rgb_data = {.on = 255, .R = pkt_ptr->data.rgb_light.red_state, .G = pkt_ptr->data.rgb_light.green_state, .B = pkt_ptr->data.rgb_light.blue_state};
+                            struct RGBData rgb_data = {.on = 255, 
+                                                       .R = pkt_ptr->data.rgb_light.red_state, 
+                                                       .G = pkt_ptr->data.rgb_light.green_state, 
+                                                       .B = pkt_ptr->data.rgb_light.blue_state};
 
                             the_slave->setData(&rgb_data);
                             break;

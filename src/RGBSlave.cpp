@@ -19,10 +19,6 @@ void RGBSlave::setData(void* data) {
     wiringPiI2CRawWrite(fd, (uint8_t*)rgb_data, sizeof(*rgb_data));
 }
 
-void RGBSlave::start(int i2c_fd) {
-    fd = i2c_fd;
-}
+void RGBSlave::start(int i2c_fd) { fd = i2c_fd; }
 
-void RGBSlave::stop() {
-    fd = -1;
-}
+void RGBSlave::stop() { fd = -1; }

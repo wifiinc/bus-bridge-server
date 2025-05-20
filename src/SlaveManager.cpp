@@ -18,7 +18,7 @@
 SlaveManager::SlaveManager() : address(MASTER_ADDRESS) {}
 
 void SlaveManager::initialize() {
-    //maybe need setup not sure.
+    // maybe need setup not sure.
 
     i2c_fd = wiringPiI2CSetup(address);
 
@@ -55,6 +55,4 @@ void SlaveManager::deleteSlave(uint8_t id) {
     }
 }
 
-BaseSlave* SlaveManager::getSlave(int id) {
-	return slaves[id];
-}
+BaseSlave* SlaveManager::getSlave(int id) { return slaves[id]; }
