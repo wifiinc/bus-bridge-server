@@ -11,8 +11,6 @@
 #include "RGBSlave.h"
 #include "packets.h"
 
-
-
 #define MASTER_ADDRESS 0x01
 
 SlaveManager::SlaveManager() : address(MASTER_ADDRESS) {}

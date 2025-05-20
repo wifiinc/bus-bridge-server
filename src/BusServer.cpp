@@ -12,7 +12,6 @@
 #include "wiringPi.h"
 #include "wiringPiI2C.h"
 
-
 #define RGB_SLAVE_ADDRESS 0x42
 
 void BusServer::setup(std::string ip, int port) {
@@ -113,7 +112,6 @@ void BusServer::start() {
         }
 
         if (net_request) {
-
             struct sensor_packet* pkt_ptr = (struct sensor_packet*)buffer;
             BaseSlave* the_slave = slave_manager.getSlave(pkt_ptr->data.generic.metadata.sensor_id);
             uint8_t values[8] = {0};
@@ -128,9 +126,9 @@ void BusServer::start() {
                             break;
 
                         case SensorType::RGB_LIGHT:
-                            struct RGBData rgb_data = {.on = 255, 
-                                                       .R = pkt_ptr->data.rgb_light.red_state, 
-                                                       .G = pkt_ptr->data.rgb_light.green_state, 
+                            struct RGBData rgb_data = {.on = 255,
+                                                       .R = pkt_ptr->data.rgb_light.red_state,
+                                                       .G = pkt_ptr->data.rgb_light.green_state,
                                                        .B = pkt_ptr->data.rgb_light.blue_state};
 
                             the_slave->setData(&rgb_data);
@@ -141,7 +139,6 @@ void BusServer::start() {
 
                     break;
             }
-
         }
     }
 }

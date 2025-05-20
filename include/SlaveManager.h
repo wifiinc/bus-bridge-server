@@ -6,7 +6,6 @@
 #include "BaseSlave.h"
 #include "packets.h"
 
-
 class SlaveManager {
    public:
     SlaveManager();
