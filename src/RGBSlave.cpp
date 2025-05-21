@@ -10,11 +10,11 @@ int RGBSlave::getId() { return id; }
 
 void RGBSlave::setData(void* data) {
     RGBData* rgb_data = (RGBData*)data;
-    color_state = *rgb_data;
+    // color_state = *rgb_data;
 
-    if (rgb_data->on > 1) {
-        rgb_data->on = color_state.on;
-    }
+    // if (rgb_data->on > 1) {
+    //     rgb_data->on = color_state.on;
+    // }
 
     wiringPiI2CRawWrite(fd, (uint8_t*)rgb_data, sizeof(*rgb_data));
 }
