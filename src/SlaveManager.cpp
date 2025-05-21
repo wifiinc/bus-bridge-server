@@ -19,9 +19,10 @@ void SlaveManager::initialize() {
     // maybe need setup not sure.
 
     i2c_fd = wiringPiI2CSetup(address);
-
     if (-1 == i2c_fd) {
         throw std::runtime_error("I2C setup failed");
+    } else {
+        printf("I2C setup succesful");
     };
 }
 
