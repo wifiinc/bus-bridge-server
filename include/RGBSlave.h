@@ -4,7 +4,6 @@
 #include "BaseSlave.h"
 
 struct RGBData {
-    uint8_t on;
     uint8_t R, G, B;
 } __attribute__((packed));
 
@@ -12,7 +11,7 @@ class RGBSlave : public BaseSlave {
    public:
     RGBSlave(uint8_t id, uint8_t i2c_address);
     void* getData();
-    void* getStatus();
+    bool getStatus();
     int getId();
     void setData(void* data);
     void start(int i2c_fd);
