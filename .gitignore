@@ -47,3 +47,7 @@ CMakeUserPresets.json
 
 # Doxygen
 docs/
+
+#build folder
+build/
+.cache/
