@@ -2,6 +2,7 @@
 #include <cstdint>
 
 #include "BaseSlave.h"
+#include "packets.h"
 
 struct RGBData {
     uint8_t R, G, B;
@@ -10,7 +11,7 @@ struct RGBData {
 class RGBSlave : public BaseSlave {
    public:
     RGBSlave(uint8_t id, uint8_t i2c_address);
-    void* getData();
+    const void* getData();
     bool getStatus();
     int getId();
     void setData(void* data);
@@ -24,4 +25,6 @@ class RGBSlave : public BaseSlave {
 
     bool power_state;
     RGBData color_state;
+
+    struct sensor_packet state_packet;
 };

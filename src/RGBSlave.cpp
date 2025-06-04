@@ -1,8 +1,16 @@
 #include "RGBSlave.h"
 
-RGBSlave::RGBSlave(uint8_t id, uint8_t i2c_address) : id(id), i2c_address(i2c_address) {}
+#include "packets.h"
 
-void* RGBSlave::getData() {
+RGBSlave::RGBSlave(uint8_t id, uint8_t i2c_address) : id(id), i2c_address(i2c_address) {
+    state_packet.header.ptype = PacketType::DATA;
+    state_packet.header.length = sizeof(struct sensor_packet_rgb_light);
+
+    state_packet.data.rgb_light.metadata.sensor_id = id;
+    state_packet.data.rgb_light.metadata.sensor_type = SensorType::RGB_LIGHT;
+}
+
+const void* RGBSlave::getData() {
     uint8_t r, g, b;
 
     r = wiringPiI2CRead(fd);
@@ -13,7 +21,11 @@ void* RGBSlave::getData() {
     color_state.G = g;
     color_state.B = b;
 
-    return;
+    state_packet.data.rgb_light.red_state = r;
+    state_packet.data.rgb_light.green_state = g;
+    state_packet.data.rgb_light.blue_state = b;
+
+    return &state_packet;
 }
 
 bool RGBSlave::getStatus() {

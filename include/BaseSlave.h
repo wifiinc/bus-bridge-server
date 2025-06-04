@@ -6,7 +6,7 @@
 class BaseSlave {
    public:
     virtual ~BaseSlave() = default;
-    virtual void* getData() = 0;
+    virtual const void* getData() = 0;
     virtual bool getStatus() = 0;
     virtual int getId() = 0;
     virtual void setData(void* data) = 0;

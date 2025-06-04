@@ -81,12 +81,14 @@ void BusServer::start() {
         char buffer[32] = {0};
         bool net_request = false;
 
+        int new_fd = -1;
+
         {
             struct sockaddr_in client_address = {0};
             socklen_t client_address_length;
 
-            int new_fd = accept4(listening_fd, (struct sockaddr*)&client_address,
-                                 &client_address_length, SOCK_NONBLOCK);
+            new_fd = accept4(listening_fd, (struct sockaddr*)&client_address,
+                             &client_address_length, SOCK_NONBLOCK);
 
             if (-1 == new_fd) {
                 int err = errno;
@@ -114,11 +116,12 @@ void BusServer::start() {
         if (net_request) {
             struct sensor_packet* pkt_ptr = (struct sensor_packet*)buffer;
             BaseSlave* the_slave = slave_manager.getSlave(pkt_ptr->data.generic.metadata.sensor_id);
+            SensorType the_sensor_type = pkt_ptr->data.generic.metadata.sensor_type;
             uint8_t values[8] = {0};
 
             switch (pkt_ptr->header.ptype) {
                 case PacketType::DASHBOARD_POST:
-                    switch (pkt_ptr->data.generic.metadata.sensor_type) {
+                    switch (the_sensor_type) {
                         case SensorType::LIGHT:
                             values[0] = pkt_ptr->data.light.target_state;
 
@@ -126,8 +129,7 @@ void BusServer::start() {
                             break;
 
                         case SensorType::RGB_LIGHT:
-                            struct RGBData rgb_data = {.on = 255,
-                                                       .R = pkt_ptr->data.rgb_light.red_state,
+                            struct RGBData rgb_data = {.R = pkt_ptr->data.rgb_light.red_state,
                                                        .G = pkt_ptr->data.rgb_light.green_state,
                                                        .B = pkt_ptr->data.rgb_light.blue_state};
 
@@ -135,8 +137,14 @@ void BusServer::start() {
                             break;
                     }
                     break;
-                case PacketType::DASHBOARD_GET:
 
+                case PacketType::DASHBOARD_GET:
+                    struct sensor_packet state_ptr;
+                    memcpy(&state_ptr, the_slave->getData(), sizeof(struct sensor_packet));
+
+                    state_ptr.header.ptype = PacketType::DASHBOARD_RESPONSE;
+
+                    send(&state_ptr, new_fd);
                     break;
             }
         }
