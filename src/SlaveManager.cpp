@@ -7,7 +7,6 @@
 #include <stdexcept>
 
 #include "CO2Slave.h"
-#include "DoorSlave.h"
 #include "RGBSlave.h"
 #include "packets.h"
 
