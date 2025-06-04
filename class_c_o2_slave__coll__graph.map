@@ -1,0 +1,7 @@
+<map id="CO2Slave" name="CO2Slave">
+<area shape="rect" id="Node000001" title=" " alt="" coords="63,268,164,453"/>
+<area shape="rect" id="Node000002" href="$class_base_slave.html" title=" " alt="" coords="5,5,123,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,204,99,267,93,268,81,205"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="147,65,178,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,131,136,252,131,251,154,130"/>
+</map>

@@ -1,0 +1,36 @@
+<map id="src/SlaveManager.cpp" name="src/SlaveManager.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="419,5,583,31"/>
+<area shape="rect" id="Node000002" href="$_slave_manager_8h.html" title=" " alt="" coords="176,79,303,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="460,33,296,78,294,72,458,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="274,225,341,251"/>
+<area shape="poly" id="edge12_Node000001_Node000003" title=" " alt="" coords="419,25,353,30,277,40,197,57,120,81,56,106,33,124,13,153,8,165,12,176,28,188,53,199,119,216,194,226,260,232,260,237,193,231,118,221,51,204,25,193,8,179,3,165,8,151,29,120,53,102,119,76,196,52,276,35,352,25,418,19"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="422,225,508,251"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="521,29,545,49,565,78,567,91,565,105,556,144,536,179,517,201,496,219,492,215,513,197,532,176,551,142,560,103,562,91,560,80,541,53,518,33"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="568,225,674,251"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="526,29,557,48,584,77,602,111,613,148,623,211,617,212,608,149,597,113,580,80,553,53,523,33"/>
+<area shape="rect" id="Node000009" href="$packets_8h.html" title="Header file for packets.h." alt="" coords="23,152,107,177"/>
+<area shape="poly" id="edge21_Node000001_Node000009" title=" " alt="" coords="419,24,361,30,296,40,229,57,165,81,120,111,85,144,82,140,117,106,162,76,227,52,295,35,360,25,419,19"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="676,79,763,104"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="537,28,672,72,670,77,535,33"/>
+<area shape="rect" id="Node000011" href="$_c_o2_slave_8h.html" title=" " alt="" coords="330,79,427,104"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="483,33,411,74,409,69,480,28"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="788,79,889,104"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="556,28,775,74,774,79,555,33"/>
+<area shape="rect" id="Node000013" href="$_r_g_b_slave_8h.html" title=" " alt="" coords="452,79,550,104"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="504,31,504,65,498,65,498,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,103,283,151,304,211,299,213,279,153,247,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="132,152,182,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="228,106,183,145,179,141,225,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="207,152,270,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="242,104,241,139,236,138,237,104"/>
+<area shape="rect" id="Node000006" href="$_base_slave_8h.html" title=" " alt="" coords="396,152,499,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="274,101,402,145,400,150,272,107"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="212,106,107,149,105,144,210,102"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="453,177,461,212,456,213,448,178"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="476,175,581,218,579,222,474,180"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="105,175,262,220,260,226,103,180"/>
+<area shape="poly" id="edge15_Node000011_Node000003" title=" " alt="" coords="375,106,322,214,317,212,370,103"/>
+<area shape="poly" id="edge16_Node000011_Node000006" title=" " alt="" coords="392,102,429,140,425,144,388,106"/>
+<area shape="poly" id="edge19_Node000013_Node000003" title=" " alt="" coords="509,104,520,139,520,160,512,179,487,197,446,212,355,232,354,227,445,207,484,192,508,176,515,159,515,140,504,105"/>
+<area shape="poly" id="edge20_Node000013_Node000006" title=" " alt="" coords="494,106,466,143,462,140,490,103"/>
+</map>

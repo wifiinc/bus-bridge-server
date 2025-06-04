@@ -1,0 +1,11 @@
+<map id="include/RGBSlave.h" name="include/RGBSlave.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="19,5,168,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,72,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,33,58,69,54,66,82,29"/>
+<area shape="rect" id="Node000003" href="$_base_slave_8h.html" title=" " alt="" coords="97,79,199,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,29,133,66,129,69,100,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="43,152,130,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="140,106,108,143,104,140,136,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="155,152,261,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="160,103,192,140,187,143,156,106"/>
+</map>

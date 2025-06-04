@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['test_0',['test',['../test__math_8cpp.html#af952a321aef057f79b901825ed175fa9',1,'TEST(MathTest, Add):&#160;test_math.cpp'],['../test__math_8cpp.html#af88b19a02bd506949898ac783cb586e5',1,'TEST(MathTest, Subtract):&#160;test_math.cpp'],['../test__math_8cpp.html#abb40c4693e222a10f6951fdafd0d87d8',1,'TEST(MathTest, SubtractNegative):&#160;test_math.cpp']]]
+  ['co2slave_0',['CO2Slave',['../class_c_o2_slave.html#adbc2b25e4694c4431355420aed1b0417',1,'CO2Slave']]],
+  ['createslave_1',['createSlave',['../class_slave_manager.html#a1891eca34612c5ea904e72b5cd9ac180',1,'SlaveManager']]]
 ];
