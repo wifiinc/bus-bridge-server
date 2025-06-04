@@ -1,0 +1,13 @@
+<map id="src/TemperatureSlave.cpp" name="src/TemperatureSlave.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,196,31"/>
+<area shape="rect" id="Node000002" href="$_temperature_slave_8h.html" title=" " alt="" coords="25,79,177,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,31,103,65,98,65,98,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="13,152,79,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,106,65,143,61,140,90,103"/>
+<area shape="rect" id="Node000004" href="$_base_slave_8h.html" title=" " alt="" coords="104,152,207,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="112,103,140,140,136,143,108,106"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="51,225,137,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="147,179,115,217,111,213,143,176"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="162,225,269,251"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="167,176,199,213,195,217,163,179"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="TemperatureSlave" name="TemperatureSlave">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,239,163,504"/>
+<area shape="rect" id="Node000002" href="$class_base_slave.html" title=" " alt="" coords="25,5,143,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,204,87,239,81,239,81,204"/>
+</map>

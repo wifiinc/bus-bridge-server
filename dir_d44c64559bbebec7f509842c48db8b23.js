@@ -6,5 +6,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "math.h", "math_8h.html", "math_8h" ],
     [ "packets.h", "packets_8h.html", "packets_8h" ],
     [ "RGBSlave.h", "_r_g_b_slave_8h.html", "_r_g_b_slave_8h" ],
-    [ "SlaveManager.h", "_slave_manager_8h.html", "_slave_manager_8h" ]
+    [ "SlaveManager.h", "_slave_manager_8h.html", "_slave_manager_8h" ],
+    [ "TemperatureSlave.h", "_temperature_slave_8h.html", "_temperature_slave_8h" ]
 ];

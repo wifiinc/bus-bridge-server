@@ -2,7 +2,8 @@ var hierarchy =
 [
     [ "BaseSlave", "class_base_slave.html", [
       [ "CO2Slave", "class_c_o2_slave.html", null ],
-      [ "RGBSlave", "class_r_g_b_slave.html", null ]
+      [ "RGBSlave", "class_r_g_b_slave.html", null ],
+      [ "TemperatureSlave", "class_temperature_slave.html", null ]
     ] ],
     [ "BusServer", "class_bus_server.html", null ],
     [ "RGBData", "struct_r_g_b_data.html", null ],
@@ -18,5 +19,6 @@ var hierarchy =
     [ "sensor_packet_light", "structsensor__packet__light.html", null ],
     [ "sensor_packet_rgb_light", "structsensor__packet__rgb__light.html", null ],
     [ "sensor_packet_temperature", "structsensor__packet__temperature.html", null ],
-    [ "SlaveManager", "class_slave_manager.html", null ]
+    [ "SlaveManager", "class_slave_manager.html", null ],
+    [ "TemperatureData", "struct_temperature_data.html", null ]
 ];

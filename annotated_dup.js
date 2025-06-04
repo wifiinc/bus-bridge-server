@@ -16,5 +16,7 @@ var annotated_dup =
     [ "sensor_packet_light", "structsensor__packet__light.html", "structsensor__packet__light" ],
     [ "sensor_packet_rgb_light", "structsensor__packet__rgb__light.html", "structsensor__packet__rgb__light" ],
     [ "sensor_packet_temperature", "structsensor__packet__temperature.html", "structsensor__packet__temperature" ],
-    [ "SlaveManager", "class_slave_manager.html", "class_slave_manager" ]
+    [ "SlaveManager", "class_slave_manager.html", "class_slave_manager" ],
+    [ "TemperatureData", "struct_temperature_data.html", "struct_temperature_data" ],
+    [ "TemperatureSlave", "class_temperature_slave.html", "class_temperature_slave" ]
 ];

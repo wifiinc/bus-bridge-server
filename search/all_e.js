@@ -16,14 +16,14 @@ var searchData=
   ['sensor_5ftype_13',['sensor_type',['../packets_8h.html#ae9038d87bda9e88f1b76ffc29d2d04d3',1,'sensor_type:&#160;packets.h'],['../structsensor__metadata.html#a656a4f41f2d8160552a79744922f8574',1,'sensor_metadata::sensor_type']]],
   ['sensortype_14',['SensorType',['../packets_8h.html#a87ca7b4499ea761999a872674eba32af',1,'packets.h']]],
   ['server_15',['Bus Bridge Server',['../index.html',1,'']]],
-  ['setdata_16',['setdata',['../class_r_g_b_slave.html#a664bb1c4d3da652e7e7709bce1e97754',1,'RGBSlave::setData()'],['../class_c_o2_slave.html#a4b1c210057588331f3370e20341dfdba',1,'CO2Slave::setData()'],['../class_base_slave.html#aafefae938adbe978729e76784ede29f8',1,'BaseSlave::setData()']]],
+  ['setdata_16',['setdata',['../class_r_g_b_slave.html#a664bb1c4d3da652e7e7709bce1e97754',1,'RGBSlave::setData()'],['../class_temperature_slave.html#a87d529016e756981c5da1dc61b138ff9',1,'TemperatureSlave::setData()'],['../class_c_o2_slave.html#a4b1c210057588331f3370e20341dfdba',1,'CO2Slave::setData()'],['../class_base_slave.html#aafefae938adbe978729e76784ede29f8',1,'BaseSlave::setData()']]],
   ['setup_17',['setup',['../class_bus_server.html#a7ad4bbd8beed568a207701f2a0e045b0',1,'BusServer']]],
   ['slave_5fmanager_18',['slave_manager',['../class_bus_server.html#a144e852d56cb74197eba21b2ce324190',1,'BusServer']]],
   ['slavemanager_19',['slavemanager',['../class_slave_manager.html',1,'SlaveManager'],['../class_slave_manager.html#aa41d00cf59131a8be082a4b62aac9969',1,'SlaveManager::SlaveManager()']]],
   ['slavemanager_2ecpp_20',['SlaveManager.cpp',['../_slave_manager_8cpp.html',1,'']]],
   ['slavemanager_2eh_21',['SlaveManager.h',['../_slave_manager_8h.html',1,'']]],
   ['slaves_22',['slaves',['../class_slave_manager.html#a5b697ac3a6cf53464d086bb297068e0e',1,'SlaveManager']]],
-  ['start_23',['start',['../class_base_slave.html#a29d22a6961c9b1bb52856ed1f87eaf7d',1,'BaseSlave::start()'],['../class_bus_server.html#a3cf47ed10bd08d2b16426e44d70a5982',1,'BusServer::start()'],['../class_c_o2_slave.html#a4645f9d110cc1d012d3eefb4657d2f1f',1,'CO2Slave::start()'],['../class_r_g_b_slave.html#a78dc9b0526a97f13e1fe238d9483551a',1,'RGBSlave::start()']]],
-  ['stop_24',['stop',['../class_base_slave.html#a63cbb93593ea83f831fc5e17270b31df',1,'BaseSlave::stop()'],['../class_c_o2_slave.html#ae62bf39b5c3629c90dc151f9b5add364',1,'CO2Slave::stop()'],['../class_r_g_b_slave.html#ae4d732fdb93e47a5d561a24cf71622f6',1,'RGBSlave::stop()']]],
+  ['start_23',['start',['../class_base_slave.html#a29d22a6961c9b1bb52856ed1f87eaf7d',1,'BaseSlave::start()'],['../class_bus_server.html#a3cf47ed10bd08d2b16426e44d70a5982',1,'BusServer::start()'],['../class_c_o2_slave.html#a4645f9d110cc1d012d3eefb4657d2f1f',1,'CO2Slave::start()'],['../class_r_g_b_slave.html#a78dc9b0526a97f13e1fe238d9483551a',1,'RGBSlave::start()'],['../class_temperature_slave.html#a6b6aa47c0332c34d32a6e808442feedc',1,'TemperatureSlave::start()']]],
+  ['stop_24',['stop',['../class_base_slave.html#a63cbb93593ea83f831fc5e17270b31df',1,'BaseSlave::stop()'],['../class_c_o2_slave.html#ae62bf39b5c3629c90dc151f9b5add364',1,'CO2Slave::stop()'],['../class_r_g_b_slave.html#ae4d732fdb93e47a5d561a24cf71622f6',1,'RGBSlave::stop()'],['../class_temperature_slave.html#a5518c3e5801fa2da643b17408766f4ef',1,'TemperatureSlave::stop()']]],
   ['subtract_25',['subtract',['../math_8h.html#a470a2cec9c256d196c0e6b8fc7a6ec36',1,'subtract(int a, int b):&#160;math.cpp'],['../math_8cpp.html#a470a2cec9c256d196c0e6b8fc7a6ec36',1,'subtract(int a, int b):&#160;math.cpp']]]
 ];

@@ -1,0 +1,14 @@
+<map id="TemperatureSlave" name="TemperatureSlave">
+<area shape="rect" id="Node000001" title=" " alt="" coords="199,381,356,567"/>
+<area shape="rect" id="Node000002" href="$class_base_slave.html" title=" " alt="" coords="5,133,123,319"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,328,154,356,200,403,196,407,150,359,128,332"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="177,5,207,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,71,180,120,174,182,175,250,187,318,206,366,201,368,181,319,170,251,169,182,175,119,182,71"/>
+<area shape="rect" id="Node000006" href="$struct_temperature_data.html" title=" " alt="" coords="218,193,345,259"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="210,70,261,177,257,180,205,72"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="369,193,428,259"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="398,260,389,307,372,358,367,368,362,366,367,356,384,306,393,259"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="495,193,537,259"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="513,260,497,309,485,335,469,359,423,401,372,434,369,430,420,397,465,356,480,333,492,307,508,258"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="283,259,281,343,281,365,276,365,276,343,278,259"/>
+</map>

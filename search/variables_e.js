@@ -1,5 +1,6 @@
 var searchData=
 [
   ['target_5fstate_0',['target_state',['../structsensor__packet__light.html#aadd7c338a5910c4a9d155db49e0d238f',1,'sensor_packet_light::target_state'],['../packets_8h.html#af938f749135abc18a65349448f97f5b4',1,'target_state:&#160;packets.h']]],
-  ['temperature_1',['temperature',['../unionsensor__packet_1_1sensor__data.html#aa2d260aecee4d1a89667385155440664',1,'sensor_packet::sensor_data::temperature'],['../unionsensor__data.html#ad71a28b204ecb8a7ff1a643144566b08',1,'sensor_data::temperature']]]
+  ['temp_1',['temp',['../struct_temperature_data.html#a8c5e73db4d67e67eb802d8cd729b478b',1,'TemperatureData::Temp'],['../_temperature_slave_8h.html#af323d0c1d9ba623adbbee2bb2ca38718',1,'Temp:&#160;TemperatureSlave.h']]],
+  ['temperature_2',['temperature',['../unionsensor__packet_1_1sensor__data.html#aa2d260aecee4d1a89667385155440664',1,'sensor_packet::sensor_data::temperature'],['../unionsensor__data.html#ad71a28b204ecb8a7ff1a643144566b08',1,'sensor_data::temperature'],['../class_temperature_slave.html#a5a52c3717ea882881c7cf3579dae5390',1,'TemperatureSlave::temperature']]]
 ];
