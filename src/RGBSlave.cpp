@@ -17,14 +17,13 @@ void* RGBSlave::getData() {
 }
 
 bool RGBSlave::getStatus() {
-    
+
     getData();
     if (color_state.R == 0 && color_state.G == 0 && color_state.B == 0) {
         return false;
     } else {
         return true;
     }
-
 }
 
 int RGBSlave::getId() { return id; }
