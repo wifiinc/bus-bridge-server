@@ -7,7 +7,7 @@
 #include <stdexcept>
 
 #include "CO2Slave.h"
-#include "DoorSlave.h"
+#include "TemperatureSlave.h"
 #include "RGBSlave.h"
 #include "packets.h"
 
@@ -37,9 +37,9 @@ void SlaveManager::createSlave(SensorType type, uint8_t id, int i2c_address) {
         case SensorType::RGB_LIGHT:
             newSlave = new RGBSlave(id, i2c_address);
             break;
-        // case /* door */:
-        //     newSlave = new DoorSlave(id, i2c_address);
-        //     break;
+        case SensorType::TEMPERATURE
+            newSlave = new TemperatureSlave(id, i2c_address);
+            break;
         default:
             return;  // Invalid type
     }
