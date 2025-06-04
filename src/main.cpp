@@ -1,8 +1,8 @@
 #include <string>
 
 #include "BusServer.h"
-#include "SlaveManager.h"
 #include "RGBSlave.h"
+#include "SlaveManager.h"
 
 int main() {
     BusServer bus_server;
@@ -17,7 +17,7 @@ int main() {
     // bus_server.setup("0.0.0.0", 5000);
     // bus_server.start();
     slave_manager.initialize();
-    
+
     slave_manager.createSlave(SensorType::RGB_LIGHT, 0x80, 0x55);
     BaseSlave* base_slave = slave_manager.getSlave(0x80);
     RGBSlave* rgb_slave = dynamic_cast<RGBSlave*>(base_slave);

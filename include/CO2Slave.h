@@ -8,7 +8,7 @@ class CO2Slave : public BaseSlave {
     CO2Slave(uint8_t id, int i2c_address);
 
     void* getData() override;
-    void* getStatus() override;
+    bool getStatus() override;
     int getId() override;
     void setData(void* data) override;
     void start(int i2c_fd) override;

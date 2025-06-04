@@ -18,7 +18,7 @@ class SlaveManager {
 
     void ledControl(uint8_t led_number, uint8_t led_state);
 
-    /**
+    /*
      * @brief Creates a new slave device into the internal mapping
      * @details Assigns a pre-known SensorType and ID to an I2C device, and then opens the I2C
      * connection to it

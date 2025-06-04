@@ -8,7 +8,7 @@ CO2Slave::CO2Slave(uint8_t id, int i2c_address) : id(id) {
 
 void* CO2Slave::getData() { return nullptr; }
 
-void* CO2Slave::getStatus() { return nullptr; }
+bool CO2Slave::getStatus() { return nullptr; }
 
 int CO2Slave::getId() { return id; }
 

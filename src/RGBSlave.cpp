@@ -13,10 +13,10 @@ void* RGBSlave::getData() {
     color_state.G = g;
     color_state.B = b;
 
-    return; 
+    return;
 }
 
-bool RGBSlave::getStatus() { 
+bool RGBSlave::getStatus() {
     
     getData();
     if (color_state.R == 0 && color_state.G == 0 && color_state.B == 0) {

@@ -4,7 +4,7 @@ DoorSlave::DoorSlave(uint8_t id, uint8_t i2c_address) : id(id) {}
 
 void* DoorSlave::getData() { return nullptr; }
 
-void* DoorSlave::getStatus() { return nullptr; }
+bool DoorSlave::getStatus() { return nullptr; }
 
 int DoorSlave::getId() { return id; }
 
