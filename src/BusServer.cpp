@@ -150,3 +150,7 @@ void BusServer::start() {
         }
     }
 }
+
+SlaveManager& getSlaveManager() {
+    return slave_manager;
+}

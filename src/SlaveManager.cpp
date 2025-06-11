@@ -27,14 +27,14 @@ void SlaveManager::initialize() {
 
 void SlaveManager::ledControl(uint8_t led_number, uint8_t led_state) {}
 
-void SlaveManager::createSlave(SensorType type, uint8_t id, int i2c_address) {
+void SlaveManager::createSlave(SensorType type, int i2c_address) {
     BaseSlave* newSlave = nullptr;
     switch (type) {
         case SensorType::CO2:
-            newSlave = new CO2Slave(id, i2c_address);
+            newSlave = new CO2Slave(i2c_address, i2c_address);
             break;
         case SensorType::RGB_LIGHT:
-            newSlave = new RGBSlave(id, i2c_address);
+            newSlave = new RGBSlave(i2c_address, i2c_address);
             break;
         // case /* door */:
         //     newSlave = new DoorSlave(id, i2c_address);
@@ -42,7 +42,7 @@ void SlaveManager::createSlave(SensorType type, uint8_t id, int i2c_address) {
         default:
             return;  // Invalid type
     }
-    slaves[id] = newSlave;
+    slaves[i2c_address] = newSlave;
 }
 void SlaveManager::deleteSlave(uint8_t id) {
     if (nullptr != slaves[id]) {
