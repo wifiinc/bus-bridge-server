@@ -47,6 +47,11 @@ class BusServer {
      */
     void start();
 
+    /**
+     * @brief balls
+     */
+    SlaveManager& getSlaveManager();
+
    private:
     int listening_fd;
 

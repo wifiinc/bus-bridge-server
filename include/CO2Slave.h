@@ -2,12 +2,13 @@
 #include <cstdint>
 
 #include "BaseSlave.h"
+#include "packets.h"
 
 class CO2Slave : public BaseSlave {
    public:
-    CO2Slave(uint8_t id, int i2c_address);
+    CO2Slave(uint8_t id, uint8_t i2c_address);
 
-    void* getData() override;
+    const void* getData() override;
     bool getStatus() override;
     int getId() override;
     void setData(void* data) override;
@@ -17,4 +18,9 @@ class CO2Slave : public BaseSlave {
    private:
     int id;
     int fd;
+    uint8_t i2c_address;
+    uint16_t command;
+
+    bool power_state = true;
+    struct sensor_packet state_packet;
 };

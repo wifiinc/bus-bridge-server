@@ -26,7 +26,7 @@ class SlaveManager {
      * @param id The ID of the slave device
      * @param i2c_address The I2C address of the slave device
      */
-    void createSlave(SensorType type, uint8_t id, int i2c_address);
+    void createSlave(SensorType type, int i2c_address);
 
     /**
      * @brief Unmaps the slave from the internal mapping

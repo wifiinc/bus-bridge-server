@@ -1,6 +1,7 @@
 #include "TemperatureSlave.h"
 
-TemperatureSlave::TemperatureSlave(uint8_t id, uint8_t i2c_address): id(id), i2c_address(i2c_address) {}
+TemperatureSlave::TemperatureSlave(uint8_t id, uint8_t i2c_address)
+    : id(id), i2c_address(i2c_address) {}
 
 void* TemperatureSlave::getData() {
     int temp;
@@ -12,7 +13,7 @@ void* TemperatureSlave::getData() {
 
 bool TemperatureSlave::getStatus() {
     getData();
-    if (temperature.Temp == 0){
+    if (temperature.Temp == 0) {
         return false;
     } else {
         return true;
