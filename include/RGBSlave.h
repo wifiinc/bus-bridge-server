@@ -23,7 +23,6 @@ class RGBSlave : public BaseSlave {
     int fd;
     uint8_t i2c_address;
 
-    bool power_state;
     RGBData color_state;
 
     struct sensor_packet state_packet;
