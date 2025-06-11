@@ -47,8 +47,9 @@ void RGBSlave::setData(void* data) {
     uint8_t g = rgb_data->G;
     uint8_t b = rgb_data->B;
 
-    char command[256] = { 0 };
-    snprintf(command, sizeof(command) - 1, "/usr/sbin/i2cset -y 1 0x%02x 0x%02x 0x%02x 0x%02x i", id, r, g, b);
+    char command[256] = {0};
+    snprintf(command, sizeof(command) - 1, "/usr/sbin/i2cset -y 1 0x%02x 0x%02x 0x%02x 0x%02x i",
+             id, r, g, b);
 
     state_packet.data.rgb_light.red_state = r;
     state_packet.data.rgb_light.green_state = g;

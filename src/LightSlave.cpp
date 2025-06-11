@@ -30,7 +30,7 @@ int LightSlave::getId() { return id; }
 void LightSlave::setData(void* data) {
     uint8_t* value = (uint8_t*)data;
 
-    char command[256] = { 0 };
+    char command[256] = {0};
     snprintf(command, sizeof(command) - 1, "/usr/sbin/i2cset -y 1 0x%02x 0x%02x i", id, *value);
 
     popen(command, "r");
