@@ -9,8 +9,13 @@ int main() {
     bus_server.setup("0.0.0.0", 5000);
 
     SlaveManager& slave_manager_ref = bus_server.getSlaveManager();
-    
-    slave_manager_ref.createSlave(SensorType::RGB_LED, 0x69);
+   
+    {
+	int fd = wiringPiI2CSetup(0x69);
+
+	slave_manager_ref.createSlave(SensorType::RGB_LIGHT, 0x69);
+	slave_manager_ref.getSlave(0x69)->start(fd);
+    }
 
     bus_server.start();
 }

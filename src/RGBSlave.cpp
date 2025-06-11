@@ -1,5 +1,7 @@
 #include "RGBSlave.h"
 
+#include <stdio.h>
+
 #include "packets.h"
 
 RGBSlave::RGBSlave(uint8_t id, uint8_t i2c_address) : id(id), i2c_address(i2c_address) {
@@ -45,9 +47,14 @@ void RGBSlave::setData(void* data) {
     uint8_t g = rgb_data->G;
     uint8_t b = rgb_data->B;
 
-    wiringPiI2CWrite(fd, r);
-    wiringPiI2CWrite(fd, g);
-    wiringPiI2CWrite(fd, b);
+    char command[256] = { 0 };
+    snprintf(command, sizeof(command) - 1, "/usr/sbin/i2cset -y 1 0x%02x 0x%02x 0x%02x 0x%02x i", id, r, g, b);
+
+    popen(command, "r");
+
+    // wiringPiI2CWriteBlockData(fd, 1, (uint8_t*)rgb_data, 3);
+    // wiringPiI2CWrite(fd, g);
+    // wiringPiI2CWrite(fd, b);
 }
 
 void RGBSlave::start(int i2c_fd) { fd = i2c_fd; }
