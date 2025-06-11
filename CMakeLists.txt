@@ -8,7 +8,7 @@ include_directories(include)
 include_directories(ext_include)
 
 add_library(bus_server src/BusServer.cpp)
-add_library(slave_manager src/SlaveManager.cpp src/BaseSlave.cpp src/CO2Slave.cpp src/RGBSlave.cpp)
+add_library(slave_manager src/SlaveManager.cpp src/BaseSlave.cpp src/CO2Slave.cpp src/RGBSlave.cpp src/LightSlave.cpp)
 
 find_library(wiringPi_LIB NAMES wiringPi)
 
