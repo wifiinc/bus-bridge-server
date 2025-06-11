@@ -13,7 +13,7 @@ void* TemperatureSlave::getData() {
 
 bool TemperatureSlave::getStatus() {
     getData();
-    if (temperature.Temp == 0){
+    if (temperature.Temp == 0) {
         return false;
     } else {
         return true;
