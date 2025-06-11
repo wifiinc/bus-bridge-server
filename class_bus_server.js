@@ -1,6 +1,7 @@
 var class_bus_server =
 [
     [ "BusServer", "class_bus_server.html#a055f166e6d4e6fd60c282545aa6071d6", null ],
+    [ "getSlaveManager", "class_bus_server.html#a74486d2094bb58b3232b4ea7f764e1b2", null ],
     [ "listen", "class_bus_server.html#a89f54bdb397e2dbc81763728c91c577e", null ],
     [ "send", "class_bus_server.html#af86b3f5d5ce3fe0304f010e1909a5965", null ],
     [ "setup", "class_bus_server.html#a7ad4bbd8beed568a207701f2a0e045b0", null ],

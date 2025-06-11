@@ -1,7 +1,7 @@
 var class_base_slave =
 [
     [ "~BaseSlave", "class_base_slave.html#a44261c25f8d84b58fe19bbddec820070", null ],
-    [ "getData", "class_base_slave.html#ab74299ade241bb7983d7c26f6febcff0", null ],
+    [ "getData", "class_base_slave.html#a154f9976324685817c64dc4a287562e8", null ],
     [ "getId", "class_base_slave.html#af5e7ac60ba88084c991f5fa2df3b02f9", null ],
     [ "getStatus", "class_base_slave.html#a37c5767e8d723a86aef8131a278514ce", null ],
     [ "setData", "class_base_slave.html#aafefae938adbe978729e76784ede29f8", null ],

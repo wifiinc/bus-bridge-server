@@ -1,9 +1,9 @@
 <map id="BaseSlave" name="BaseSlave">
-<area shape="rect" id="Node000001" title=" " alt="" coords="127,5,244,191"/>
-<area shape="rect" id="Node000002" href="$class_c_o2_slave.html" title=" " alt="" coords="5,269,107,474"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,204,121,240,107,270,102,267,116,238,133,202"/>
-<area shape="rect" id="Node000003" href="$class_r_g_b_slave.html" title=" " alt="" coords="131,239,240,504"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,204,188,239,183,239,183,204"/>
-<area shape="rect" id="Node000004" href="$class_temperature_slave.html" title=" " alt="" coords="264,239,421,504"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="248,201,269,237,264,240,243,204"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="139,5,256,191"/>
+<area shape="rect" id="Node000002" href="$class_c_o2_slave.html" title=" " alt="" coords="5,239,117,524"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,204,132,240,120,264,115,262,127,238,144,202"/>
+<area shape="rect" id="Node000003" href="$class_r_g_b_slave.html" title=" " alt="" coords="141,249,253,514"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,204,200,248,195,248,195,204"/>
+<area shape="rect" id="Node000004" href="$class_temperature_slave.html" title=" " alt="" coords="277,249,435,514"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="258,201,284,247,279,250,253,204"/>
 </map>

@@ -1,7 +1,7 @@
 var class_slave_manager =
 [
     [ "SlaveManager", "class_slave_manager.html#aa41d00cf59131a8be082a4b62aac9969", null ],
-    [ "createSlave", "class_slave_manager.html#a1891eca34612c5ea904e72b5cd9ac180", null ],
+    [ "createSlave", "class_slave_manager.html#aa24eb9270fbbf03219ebc967c7d05481", null ],
     [ "deleteSlave", "class_slave_manager.html#aa8f6791612308a018ac18fec89a12cb6", null ],
     [ "getSlave", "class_slave_manager.html#a86c3dbb6f4b5998b93bc75aa76470df4", null ],
     [ "initialize", "class_slave_manager.html#ab8c11051a7f62b4b03cd06132d34328f", null ],
