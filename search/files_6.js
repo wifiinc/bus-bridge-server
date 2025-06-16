@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['temperatureslave_2ecpp_0',['TemperatureSlave.cpp',['../_temperature_slave_8cpp.html',1,'']]],
-  ['temperatureslave_2eh_1',['TemperatureSlave.h',['../_temperature_slave_8h.html',1,'']]],
-  ['test_5fmath_2ecpp_2',['test_math.cpp',['../test__math_8cpp.html',1,'']]]
+  ['slavemanager_2ecpp_0',['SlaveManager.cpp',['../_slave_manager_8cpp.html',1,'']]],
+  ['slavemanager_2eh_1',['SlaveManager.h',['../_slave_manager_8h.html',1,'']]]
 ];

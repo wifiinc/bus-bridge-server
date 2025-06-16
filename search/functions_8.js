@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]]
+  ['ledcontrol_0',['ledControl',['../class_slave_manager.html#ae8b753d4a6d373b4c096b299fa4b312f',1,'SlaveManager']]],
+  ['listen_1',['listen',['../class_bus_server.html#a89f54bdb397e2dbc81763728c91c577e',1,'BusServer']]]
 ];

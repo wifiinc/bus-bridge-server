@@ -6,5 +6,6 @@ var searchData=
   ['co2slave_2eh_3',['CO2Slave.h',['../_c_o2_slave_8h.html',1,'']]],
   ['color_5fstate_4',['color_state',['../class_r_g_b_slave.html#ab96770ff36011e9b3aa4e1191bab327b',1,'RGBSlave']]],
   ['command_5',['command',['../class_c_o2_slave.html#abfdd1c3ff2db62ff048eede3d94fcde3',1,'CO2Slave']]],
-  ['createslave_6',['createSlave',['../class_slave_manager.html#aa24eb9270fbbf03219ebc967c7d05481',1,'SlaveManager']]]
+  ['createslave_6',['createSlave',['../class_slave_manager.html#aa24eb9270fbbf03219ebc967c7d05481',1,'SlaveManager']]],
+  ['current_5fspeed_7',['current_speed',['../class_fan_slave.html#af1ecf7bf7e6f47ba51b4eaa68a0248ce',1,'FanSlave']]]
 ];

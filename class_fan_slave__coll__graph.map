@@ -1,0 +1,50 @@
+<map id="FanSlave" name="FanSlave">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1300,795,1401,980"/>
+<area shape="rect" id="Node000002" href="$class_base_slave.html" title=" " alt="" coords="1163,532,1280,717"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1275,729,1307,793,1303,795,1271,731"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="1305,592,1335,657"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1324,657,1333,770,1334,778,1329,779,1328,771,1319,658"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="1211,5,1269,71"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1270,37,1336,44,1375,51,1414,62,1450,78,1480,100,1500,129,1508,164,1508,626,1508,702,1502,734,1485,772,1454,813,1417,847,1413,843,1450,810,1480,769,1497,732,1503,701,1503,626,1503,165,1496,131,1476,104,1448,83,1412,67,1374,56,1335,49,1269,43"/>
+<area shape="rect" id="Node000006" href="$structsensor__header.html" title="Header structure for sensor packets." alt="" coords="1359,133,1468,199"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="1271,58,1358,121,1355,125,1268,63"/>
+<area shape="rect" id="Node000010" href="$structsensor__metadata.html" title="Structure for sensor metadata, which is always included in any packet." alt="" coords="585,133,711,199"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="1211,48,728,150,727,145,1210,43"/>
+<area shape="rect" id="Node000018" href="$structsensor__packet__light.html" title="Structure for light sensor packets." alt="" coords="1190,261,1333,327"/>
+<area shape="poly" id="edge26_Node000018_Node000004" title=" " alt="" coords="1245,71,1255,198,1259,245,1254,245,1249,199,1240,71"/>
+<area shape="rect" id="Node000019" href="$structsensor__packet__rgb__light.html" title="Structure for RGB light sensor packets." alt="" coords="79,261,249,327"/>
+<area shape="poly" id="edge29_Node000019_Node000004" title=" " alt="" coords="1211,42,990,47,660,62,493,74,347,90,236,110,199,122,178,135,162,159,155,187,153,216,156,245,150,245,148,217,149,186,157,157,174,131,197,117,235,105,346,84,493,68,660,56,990,42,1210,37"/>
+<area shape="rect" id="Node000005" href="$structsensor__packet.html" title="Union structure for the entire sensor packet." alt="" coords="1360,592,1467,657"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1408,658,1379,779,1374,778,1403,657"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1416,199,1416,576,1411,576,1411,199"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1506,5,1593,71"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1517,73,1462,124,1458,120,1513,69"/>
+<area shape="rect" id="Node000008" href="$unionsensor__packet_1_1sensor__data.html" title=" " alt="" coords="644,404,839,469"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="839,441,970,453,1118,470,1254,496,1308,512,1348,530,1373,551,1392,576,1388,580,1369,555,1345,534,1306,517,1252,501,1117,476,969,458,839,447"/>
+<area shape="rect" id="Node000009" href="$structsensor__heartbeat.html" title="Structure for heartbeat packets." alt="" coords="623,261,750,327"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="701,326,725,387,720,389,696,328"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="647,199,652,237,656,246,651,248,647,238,642,199"/>
+<area shape="rect" id="Node000012" href="$structsensor__packet__generic.html" title="Structure for generic sensor packets." alt="" coords="436,261,599,327"/>
+<area shape="poly" id="edge14_Node000012_Node000010" title=" " alt="" coords="594,201,565,225,545,249,540,246,561,221,590,197"/>
+<area shape="rect" id="Node000013" href="$structsensor__packet__temperature.html" title="Structure for temperature sensor packets." alt="" coords="971,261,1165,327"/>
+<area shape="poly" id="edge16_Node000013_Node000010" title=" " alt="" coords="712,181,838,220,873,235,955,258,954,263,871,240,836,225,711,187"/>
+<area shape="rect" id="Node000015" href="$structsensor__packet__co2.html" title="Structure for CO2 sensor packets." alt="" coords="274,261,411,327"/>
+<area shape="poly" id="edge19_Node000015_Node000010" title=" " alt="" coords="585,186,528,203,469,225,409,255,406,251,467,220,526,198,584,181"/>
+<area shape="rect" id="Node000017" href="$structsensor__packet__humidity.html" title="Structure for humidity sensor packets." alt="" coords="774,261,946,327"/>
+<area shape="poly" id="edge22_Node000017_Node000010" title=" " alt="" coords="697,196,760,235,788,251,785,255,757,240,695,201"/>
+<area shape="poly" id="edge25_Node000018_Node000010" title=" " alt="" coords="712,167,779,171,859,181,946,196,1030,220,1056,235,1087,244,1113,248,1174,258,1174,264,1112,254,1085,249,1054,240,1028,225,945,202,859,186,778,177,711,172"/>
+<area shape="poly" id="edge28_Node000019_Node000010" title=" " alt="" coords="585,179,477,198,357,225,257,258,255,253,355,220,476,192,584,174"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="5,5,93,71"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="94,46,569,145,568,151,93,51"/>
+<area shape="poly" id="edge13_Node000008_Node000012" title=" " alt="" coords="562,325,641,378,668,394,666,398,639,382,559,329"/>
+<area shape="poly" id="edge15_Node000008_Node000013" title=" " alt="" coords="1012,329,902,382,855,401,853,396,900,378,1010,324"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1051,133,1093,199"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="1095,175,1114,186,1132,200,1143,218,1141,238,1133,251,1129,248,1136,236,1138,219,1128,204,1111,190,1092,179"/>
+<area shape="poly" id="edge23_Node000017_Node000014" title=" " alt="" coords="1052,182,979,225,928,255,925,250,976,220,1049,178"/>
+<area shape="poly" id="edge18_Node000008_Node000015" title=" " alt="" coords="413,323,553,377,629,402,628,407,551,383,411,328"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="277,133,344,199"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="279,191,255,209,241,224,239,230,241,236,261,253,258,257,236,239,234,230,236,221,252,205,276,187"/>
+<area shape="poly" id="edge21_Node000008_Node000017" title=" " alt="" coords="841,329,801,382,790,394,786,390,797,378,837,325"/>
+<area shape="poly" id="edge24_Node000008_Node000018" title=" " alt="" coords="1200,329,1136,357,1066,383,958,408,855,425,854,420,957,403,1065,377,1134,352,1198,324"/>
+<area shape="poly" id="edge27_Node000008_Node000019" title=" " alt="" coords="241,324,317,352,399,377,517,403,628,420,627,425,516,408,398,383,315,357,239,329"/>
+</map>

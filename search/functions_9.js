@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rgbslave_0',['RGBSlave',['../class_r_g_b_slave.html#acd7c2eca4608889442e29e5b80c8b1ac',1,'RGBSlave']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]]
 ];
