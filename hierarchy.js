@@ -3,6 +3,7 @@ var hierarchy =
     [ "BaseSlave", "class_base_slave.html", [
       [ "CO2Slave", "class_c_o2_slave.html", null ],
       [ "FanSlave", "class_fan_slave.html", null ],
+      [ "LightSlave", "class_light_slave.html", null ],
       [ "RGBSlave", "class_r_g_b_slave.html", null ],
       [ "TemperatureSlave", "class_temperature_slave.html", null ]
     ] ],

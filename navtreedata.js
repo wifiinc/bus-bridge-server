@@ -52,7 +52,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_base_slave_8cpp.html"
+"_base_slave_8cpp.html",
+"unionsensor__data.html#a47aa1a1e971662dc3a99f3a0f9482d7e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

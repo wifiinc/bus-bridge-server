@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Bus Bridge Server<span id="projectnumber">&#160;commit-e0467b0</span>
+   <div id="projectname">Bus Bridge Server<span id="projectnumber">&#160;commit-327ab86</span>
    </div>
    <div id="projectbrief">Better then any software hhs has ever made</div>
   </td>
@@ -112,12 +112,12 @@ $(document).ready(function(){initNavTree('main_8cpp_source.html',''); initResiza
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    bus_server.<a class="code hl_function" href="class_bus_server.html#a7ad4bbd8beed568a207701f2a0e045b0">setup</a>(<span class="stringliteral">&quot;0.0.0.0&quot;</span>, 5000);</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_class" href="class_slave_manager.html">SlaveManager</a>&amp; slave_manager_ref = bus_server.<a class="code hl_function" href="class_bus_server.html#a74486d2094bb58b3232b4ea7f764e1b2">getSlaveManager</a>();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>   </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">int</span> fd = wiringPiI2CSetup(0x69);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordtype">int</span> fd = wiringPiI2CSetup(0x69);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    slave_manager_ref.<a class="code hl_function" href="class_slave_manager.html#aa24eb9270fbbf03219ebc967c7d05481">createSlave</a>(<a class="code hl_enumvalue" href="packets_8h.html#a87ca7b4499ea761999a872674eba32afa3184da2def154d1ca5d5d570fc041f2e">SensorType::RGB_LIGHT</a>, 0x69);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    slave_manager_ref.<a class="code hl_function" href="class_slave_manager.html#a86c3dbb6f4b5998b93bc75aa76470df4">getSlave</a>(0x69)-&gt;<a class="code hl_function" href="class_base_slave.html#a29d22a6961c9b1bb52856ed1f87eaf7d">start</a>(fd);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        slave_manager_ref.<a class="code hl_function" href="class_slave_manager.html#aa24eb9270fbbf03219ebc967c7d05481">createSlave</a>(<a class="code hl_enumvalue" href="packets_8h.html#a87ca7b4499ea761999a872674eba32afa3184da2def154d1ca5d5d570fc041f2e">SensorType::RGB_LIGHT</a>, 0x69);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        slave_manager_ref.<a class="code hl_function" href="class_slave_manager.html#a86c3dbb6f4b5998b93bc75aa76470df4">getSlave</a>(0x69)-&gt;<a class="code hl_function" href="class_base_slave.html#a29d22a6961c9b1bb52856ed1f87eaf7d">start</a>(fd);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    bus_server.<a class="code hl_function" href="class_bus_server.html#a3cf47ed10bd08d2b16426e44d70a5982">start</a>();</div>

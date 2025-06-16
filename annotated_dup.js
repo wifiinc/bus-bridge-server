@@ -4,6 +4,7 @@ var annotated_dup =
     [ "BusServer", "class_bus_server.html", "class_bus_server" ],
     [ "CO2Slave", "class_c_o2_slave.html", "class_c_o2_slave" ],
     [ "FanSlave", "class_fan_slave.html", "class_fan_slave" ],
+    [ "LightSlave", "class_light_slave.html", "class_light_slave" ],
     [ "RGBData", "struct_r_g_b_data.html", "struct_r_g_b_data" ],
     [ "RGBSlave", "class_r_g_b_slave.html", "class_r_g_b_slave" ],
     [ "sensor_data", "unionsensor__data.html", "unionsensor__data" ],

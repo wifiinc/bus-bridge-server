@@ -1,7 +1,7 @@
 var searchData=
 [
   ['co2_0',['co2',['../unionsensor__packet_1_1sensor__data.html#a579ce861df3388f57ae952b214ce0617',1,'sensor_packet::sensor_data::co2'],['../unionsensor__data.html#ab712b9bf21da554e119e42d33fbb09f8',1,'sensor_data::co2']]],
-  ['color_5fstate_1',['color_state',['../class_r_g_b_slave.html#ab96770ff36011e9b3aa4e1191bab327b',1,'RGBSlave']]],
+  ['color_5fstate_1',['color_state',['../class_light_slave.html#a9d7bc6e3e01753db95e50ecfb6ff9b2a',1,'LightSlave::color_state'],['../class_r_g_b_slave.html#ab96770ff36011e9b3aa4e1191bab327b',1,'RGBSlave::color_state']]],
   ['command_2',['command',['../class_c_o2_slave.html#abfdd1c3ff2db62ff048eede3d94fcde3',1,'CO2Slave']]],
   ['current_5fspeed_3',['current_speed',['../class_fan_slave.html#af1ecf7bf7e6f47ba51b4eaa68a0248ce',1,'FanSlave']]]
 ];

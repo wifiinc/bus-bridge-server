@@ -5,5 +5,5 @@ var searchData=
   ['slave_5fmanager_2',['slave_manager',['../class_bus_server.html#a144e852d56cb74197eba21b2ce324190',1,'BusServer']]],
   ['slaves_3',['slaves',['../class_slave_manager.html#a5b697ac3a6cf53464d086bb297068e0e',1,'SlaveManager']]],
   ['speed_4',['speed',['../structsensor__packet__fan.html#a8ee5149e97cb2174bcb345346eee091e',1,'sensor_packet_fan::speed'],['../packets_8h.html#aae32029df16a54aa86c0aec2df9f7bb7',1,'speed:&#160;packets.h']]],
-  ['state_5fpacket_5',['state_packet',['../class_c_o2_slave.html#ae2882b852892d203243fb624d4625303',1,'CO2Slave::state_packet'],['../class_fan_slave.html#addbabf07d7f8134692655ff46889a428',1,'FanSlave::state_packet'],['../class_r_g_b_slave.html#a61262fd4d18fdd2e3608679575b25979',1,'RGBSlave::state_packet']]]
+  ['state_5fpacket_5',['state_packet',['../class_c_o2_slave.html#ae2882b852892d203243fb624d4625303',1,'CO2Slave::state_packet'],['../class_fan_slave.html#addbabf07d7f8134692655ff46889a428',1,'FanSlave::state_packet'],['../class_light_slave.html#ac8d8581569ab2548921f0a4215bdef51',1,'LightSlave::state_packet'],['../class_r_g_b_slave.html#a61262fd4d18fdd2e3608679575b25979',1,'RGBSlave::state_packet']]]
 ];

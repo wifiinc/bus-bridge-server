@@ -1,0 +1,14 @@
+<map id="include/LightSlave.h" name="include/LightSlave.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,159,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="9,152,75,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,33,47,53,30,80,26,94,27,109,34,139,29,140,21,110,21,94,25,78,43,50,64,29"/>
+<area shape="rect" id="Node000003" href="$_base_slave_8h.html" title=" " alt="" coords="148,79,251,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,28,170,69,167,74,99,33"/>
+<area shape="rect" id="Node000006" href="$packets_8h.html" title="Header file for packets.h." alt="" coords="40,79,124,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="85,31,85,65,79,65,79,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="128,152,215,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="197,105,183,140,178,138,192,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="239,152,346,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="216,102,268,141,265,146,213,106"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="78,106,58,141,53,139,73,103"/>
+</map>
