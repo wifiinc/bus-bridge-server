@@ -1,14 +1,13 @@
 #include "BusServer.h"
 
 #include <arpa/inet.h>
+#include <fcntl.h>
 #include <sys/socket.h>
+#include <unistd.h>
 
 #include <cerrno>
 #include <cstring>
 #include <stdexcept>
-
-#include <fcntl.h>
-#include <unistd.h>
 
 #include "RGBSlave.h"
 #include "packets.h"
@@ -78,24 +77,22 @@ void BusServer::start() {
     // start off by mapping pre-known addresses to ID's
     listen();
 
-	int the_fd = -1;
+    int the_fd = -1;
 
     while (true) {
         char buffer[32] = {0};
         bool net_request = false;
 
-	    int new_fd = -1;
+        int new_fd = -1;
 
         {
             struct sockaddr_in client_address = {0};
             socklen_t client_address_length = sizeof(client_address);
-		    
-	    new_fd = accept4(listening_fd, (struct sockaddr*)&client_address,
-				     &client_address_length, SOCK_NONBLOCK);
 
+            new_fd = accept4(listening_fd, (struct sockaddr*)&client_address,
+                             &client_address_length, SOCK_NONBLOCK);
 
             if (-1 == new_fd) {
-
                 int err = errno;
                 switch (err) {
                     case EWOULDBLOCK:
@@ -108,41 +105,38 @@ void BusServer::start() {
                         break;
                 }
             } else {
-		the_fd = new_fd;
-		    //printf("new fd: %d\nthe fd: %d\n", new_fd, the_fd);
-	    }
+                the_fd = new_fd;
+                // printf("new fd: %d\nthe fd: %d\n", new_fd, the_fd);
+            }
 
+            if (the_fd != -1) {
+                int err;
+                int recvd = recv(the_fd, buffer, sizeof(buffer), SOCK_NONBLOCK);
+                if (0 == recvd) {
+                    close(the_fd);
+                    the_fd = -1;
+                    continue;
+                }
 
-	    if (the_fd != -1) {
-		    int err;
-		int recvd = recv(the_fd, buffer, sizeof(buffer), SOCK_NONBLOCK);
-		if (0 == recvd) {
-			close(the_fd);
-			the_fd = -1;
-			continue;
-		}
-
-		if (-1 == recvd)
-			err = errno;
-			//printf("%d\n", err);
-			//perror("recv balls");
+                if (-1 == recvd) err = errno;
+                // printf("%d\n", err);
+                // perror("recv balls");
                 if (-1 == recvd && err != EAGAIN) {
                     perror("recv()");
-		    usleep(100000);
+                    usleep(100000);
                     throw std::runtime_error("reading from client socket failed for some reason");
                 } else if (errno != EAGAIN) {
-		    //printf("%d\n", recvd);
+                    // printf("%d\n", recvd);
                 } else {
-		    // printf("%d\n", recvd);
-		    if (recvd > 0)
-			    net_request = true;
+                    // printf("%d\n", recvd);
+                    if (recvd > 0) net_request = true;
 
-                    //perror("recv()[1]");
-		    usleep(100000);
-		}
+                    // perror("recv()[1]");
+                    usleep(100000);
+                }
             }
         }
-	
+
         if (net_request) {
             struct sensor_packet* pkt_ptr = (struct sensor_packet*)buffer;
             BaseSlave* the_slave = slave_manager.getSlave(pkt_ptr->data.generic.metadata.sensor_id);
@@ -182,6 +176,4 @@ void BusServer::start() {
     }
 }
 
-SlaveManager& BusServer::getSlaveManager() {
-    return slave_manager;
-}
+SlaveManager& BusServer::getSlaveManager() { return slave_manager; }
