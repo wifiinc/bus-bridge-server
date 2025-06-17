@@ -13,15 +13,15 @@ RGBSlave::RGBSlave(uint8_t id, uint8_t i2c_address) : id(id), i2c_address(i2c_ad
 }
 
 const void* RGBSlave::getData() {
-    uint8_t r, g, b;
+    // uint8_t r, g, b;
 
-    r = wiringPiI2CRead(fd);
-    g = wiringPiI2CRead(fd);
-    b = wiringPiI2CRead(fd);
+    // r = wiringPiI2CRead(fd);
+    // g = wiringPiI2CRead(fd);
+    // b = wiringPiI2CRead(fd);
 
-    color_state.R = r;
-    color_state.G = g;
-    color_state.B = b;
+    // color_state.R = r;
+    // color_state.G = g;
+    // color_state.B = b;
 
     // state_packet.data.rgb_light.red_state = r;
     // state_packet.data.rgb_light.green_state = g;
@@ -32,7 +32,11 @@ const void* RGBSlave::getData() {
 
 bool RGBSlave::getStatus() {
     getData();
-    if (color_state.R == 0 && color_state.G == 0 && color_state.B == 0) {
+    if (
+        state_packet.data.rgb_light.red_state == 0 &&
+        state_packet.data.rgb_light.green_state == 0 &&
+        state_packet.data.rgb_light.blue_state == 0
+    ) {
         return false;
     } else {
         return true;

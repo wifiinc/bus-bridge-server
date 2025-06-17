@@ -4,10 +4,13 @@ TemperatureSlave::TemperatureSlave(uint8_t id, uint8_t i2c_address)
     : id(id), i2c_address(i2c_address) {}
 
 void* TemperatureSlave::getData() {
-    int temp;
-
-    temp = wiringPiI2CRead(fd);
-
+    int temp = 0;
+    char command[256] = {0};
+    snprintf(command, sizeof(command) - 1, "/usr/sbin/i2cset -y 1 0x%02x 0x21 0x30 i",
+             id);
+    popen(command, "r");
+    temp = wiringPiI2CRead(fd) << 8;
+    temp |= wiringPiI2CRead(fd);
     return;
 }
 
