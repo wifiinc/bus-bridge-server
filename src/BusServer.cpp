@@ -143,6 +143,10 @@ void BusServer::start() {
             SensorType the_sensor_type = pkt_ptr->data.generic.metadata.sensor_type;
             uint8_t values[8] = {0};
 
+	    struct RGBData rgb_data = {.R = pkt_ptr->data.rgb_light.red_state,
+				       .G = pkt_ptr->data.rgb_light.green_state,
+				       .B = pkt_ptr->data.rgb_light.blue_state};
+
             switch (pkt_ptr->header.ptype) {
                 case PacketType::DASHBOARD_POST:
                     switch (the_sensor_type) {
@@ -153,11 +157,12 @@ void BusServer::start() {
                             break;
 
                         case SensorType::RGB_LIGHT:
-                            struct RGBData rgb_data = {.R = pkt_ptr->data.rgb_light.red_state,
-                                                       .G = pkt_ptr->data.rgb_light.green_state,
-                                                       .B = pkt_ptr->data.rgb_light.blue_state};
-
                             the_slave->setData(&rgb_data);
+
+                            break;
+
+			case SensorType::FAN:
+                            the_slave->setData(&pkt_ptr->data.fan.speed);
 
                             break;
                     }

@@ -17,5 +17,12 @@ int main() {
         slave_manager_ref.getSlave(0x69)->start(fd);
     }
 
+    {
+        int fd = wiringPiI2CSetup(0x6a);
+    
+        slave_manager_ref.createSlave(SensorType::FAN, 0x6a);
+        slave_manager_ref.getSlave(0x6a)->start(fd);
+    }
+
     bus_server.start();
 }

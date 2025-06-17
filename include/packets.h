@@ -245,6 +245,7 @@ struct sensor_packet {
         struct sensor_packet_humidity humidity;
         struct sensor_packet_light light;
         struct sensor_packet_rgb_light rgb_light;
+	    struct sensor_packet_fan fan;
     } data;
 } __attribute__((packed));
 

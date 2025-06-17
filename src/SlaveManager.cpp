@@ -6,6 +6,7 @@
 #include <cstdint>
 #include <stdexcept>
 
+#include "FanSlave.h"
 #include "CO2Slave.h"
 #include "RGBSlave.h"
 #include "packets.h"
@@ -39,6 +40,9 @@ void SlaveManager::createSlave(SensorType type, int i2c_address) {
         // case /* door */:
         //     newSlave = new DoorSlave(id, i2c_address);
         //     break;
+	case SensorType::FAN:
+	    newSlave = new FanSlave(i2c_address, i2c_address);
+	    break;
         default:
             return;  // Invalid type
     }
