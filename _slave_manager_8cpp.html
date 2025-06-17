@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Bus Bridge Server<span id="projectnumber">&#160;commit-327ab86</span>
+   <div id="projectname">Bus Bridge Server<span id="projectnumber">&#160;commit-b6edfd8</span>
    </div>
    <div id="projectbrief">Better then any software hhs has ever made</div>
   </td>
@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('_slave_manager_8cpp.html',''); initRes
 <code>#include &lt;wiringPiI2C.h&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &quot;<a class="el" href="_fan_slave_8h_source.html">FanSlave.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_c_o2_slave_8h_source.html">CO2Slave.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_r_g_b_slave_8h_source.html">RGBSlave.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="packets_8h_source.html">packets.h</a>&quot;</code><br />
@@ -110,40 +111,45 @@ Include dependency graph for SlaveManager.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_slave_manager_8cpp__incl.png" border="0" usemap="#asrc_2_slave_manager_8cpp" alt=""/></div>
 <map name="asrc_2_slave_manager_8cpp" id="asrc_2_slave_manager_8cpp">
-<area shape="rect" title=" " alt="" coords="238,5,402,31"/>
-<area shape="rect" href="_slave_manager_8h.html" title=" " alt="" coords="324,79,451,104"/>
-<area shape="poly" title=" " alt="" coords="333,29,369,67,365,70,329,33"/>
-<area shape="rect" title=" " alt="" coords="69,225,136,251"/>
-<area shape="poly" title=" " alt="" coords="238,27,174,33,108,44,53,59,33,69,19,80,10,97,9,114,13,132,22,151,49,186,78,214,75,218,45,189,17,154,8,134,3,114,5,95,15,77,30,65,51,54,107,39,173,28,237,21"/>
-<area shape="rect" title=" " alt="" coords="286,225,372,251"/>
-<area shape="poly" title=" " alt="" coords="369,28,440,50,477,65,512,82,540,103,558,126,563,151,560,165,551,179,525,197,483,212,386,232,385,227,481,207,522,193,547,176,555,163,558,151,554,128,536,106,509,87,475,70,438,55,367,33"/>
-<area shape="rect" title=" " alt="" coords="513,225,620,251"/>
-<area shape="poly" title=" " alt="" coords="403,23,473,40,507,56,539,77,560,98,572,121,576,146,576,177,572,212,567,212,570,177,571,147,567,123,556,102,535,81,505,60,471,46,401,28"/>
-<area shape="rect" href="packets_8h.html" title="Header file for packets.h." alt="" coords="60,152,144,177"/>
-<area shape="poly" title=" " alt="" coords="289,33,242,53,193,81,155,112,124,143,120,139,151,108,190,76,240,49,287,28"/>
-<area shape="rect" title=" " alt="" coords="663,79,750,104"/>
-<area shape="poly" title=" " alt="" coords="382,28,650,77,649,82,381,33"/>
-<area shape="rect" href="_c_o2_slave_8h.html" title=" " alt="" coords="203,79,300,104"/>
-<area shape="poly" title=" " alt="" coords="310,33,274,70,270,67,307,29"/>
-<area shape="rect" href="_r_g_b_slave_8h.html" title=" " alt="" coords="29,79,128,104"/>
-<area shape="poly" title=" " alt="" coords="282,33,132,77,130,72,280,28"/>
-<area shape="poly" title=" " alt="" coords="386,106,369,142,355,162,337,179,291,205,241,223,192,233,149,238,149,232,191,227,240,217,289,201,334,175,351,159,364,139,381,103"/>
-<area shape="rect" title=" " alt="" coords="486,152,537,177"/>
-<area shape="poly" title=" " alt="" coords="409,102,481,143,478,147,406,106"/>
-<area shape="rect" title=" " alt="" coords="399,152,462,177"/>
-<area shape="poly" title=" " alt="" coords="397,103,419,139,414,142,392,106"/>
-<area shape="rect" href="_base_slave_8h.html" title=" " alt="" coords="220,152,323,177"/>
-<area shape="poly" title=" " alt="" coords="370,106,304,147,301,142,368,102"/>
-<area shape="poly" title=" " alt="" coords="342,107,158,152,157,147,341,101"/>
-<area shape="poly" title=" " alt="" coords="283,176,313,213,309,216,279,179"/>
-<area shape="poly" title=" " alt="" coords="320,175,506,219,505,225,318,180"/>
-<area shape="poly" title=" " alt="" coords="105,178,105,212,100,212,100,178"/>
-<area shape="poly" title=" " alt="" coords="241,106,126,218,122,214,238,103"/>
-<area shape="poly" title=" " alt="" coords="258,104,267,138,262,140,252,105"/>
-<area shape="poly" title=" " alt="" coords="229,106,140,148,138,144,227,102"/>
-<area shape="poly" title=" " alt="" coords="71,106,52,138,48,157,50,176,62,197,78,214,74,218,58,200,45,178,42,157,47,136,66,103"/>
-<area shape="poly" title=" " alt="" coords="110,102,228,145,227,150,108,107"/>
-<area shape="poly" title=" " alt="" coords="85,103,97,138,91,140,80,105"/>
+<area shape="rect" title=" " alt="" coords="288,5,452,31"/>
+<area shape="rect" href="_slave_manager_8h.html" title=" " alt="" coords="444,79,571,104"/>
+<area shape="poly" title=" " alt="" coords="393,28,474,70,471,75,391,33"/>
+<area shape="rect" title=" " alt="" coords="157,225,223,251"/>
+<area shape="poly" title=" " alt="" coords="288,24,211,29,131,39,62,56,37,67,20,80,9,101,11,120,22,140,41,159,93,192,148,218,145,223,91,197,38,163,18,143,6,122,4,100,16,77,34,63,60,51,130,34,211,24,287,19"/>
+<area shape="rect" title=" " alt="" coords="384,225,471,251"/>
+<area shape="poly" title=" " alt="" coords="453,26,509,40,567,64,593,80,616,100,636,124,650,151,653,175,645,195,628,210,604,221,545,235,484,239,484,234,544,229,602,216,625,206,641,192,648,175,645,153,631,127,613,104,590,85,564,69,508,45,451,31"/>
+<area shape="rect" title=" " alt="" coords="611,225,718,251"/>
+<area shape="poly" title=" " alt="" coords="452,21,493,28,537,38,580,54,619,76,639,92,653,108,670,151,674,183,672,212,667,211,669,183,665,153,648,111,636,96,616,81,578,59,535,43,492,33,452,27"/>
+<area shape="rect" href="packets_8h.html" title="Header file for packets.h." alt="" coords="108,152,192,177"/>
+<area shape="poly" title=" " alt="" coords="288,33,235,51,210,64,188,81,168,109,157,139,152,137,163,106,184,77,207,59,233,46,287,28"/>
+<area shape="rect" title=" " alt="" coords="761,79,848,104"/>
+<area shape="poly" title=" " alt="" coords="444,28,742,76,748,77,747,82,741,81,444,33"/>
+<area shape="rect" href="_fan_slave_8h.html" title=" " alt="" coords="31,79,123,104"/>
+<area shape="poly" title=" " alt="" coords="323,33,136,78,135,73,322,28"/>
+<area shape="rect" href="_c_o2_slave_8h.html" title=" " alt="" coords="199,79,296,104"/>
+<area shape="poly" title=" " alt="" coords="351,33,280,74,278,69,349,28"/>
+<area shape="rect" href="_r_g_b_slave_8h.html" title=" " alt="" coords="321,79,419,104"/>
+<area shape="poly" title=" " alt="" coords="373,31,373,65,367,65,367,31"/>
+<area shape="poly" title=" " alt="" coords="502,106,476,143,457,163,435,180,385,204,333,220,282,231,238,236,237,231,281,225,331,215,384,199,432,175,454,159,472,139,498,103"/>
+<area shape="rect" title=" " alt="" coords="585,152,635,177"/>
+<area shape="poly" title=" " alt="" coords="525,102,583,142,580,146,522,106"/>
+<area shape="rect" title=" " alt="" coords="497,152,560,177"/>
+<area shape="poly" title=" " alt="" coords="513,104,524,138,519,140,508,105"/>
+<area shape="rect" href="_base_slave_8h.html" title=" " alt="" coords="319,152,421,177"/>
+<area shape="poly" title=" " alt="" coords="486,106,406,148,403,143,484,102"/>
+<area shape="poly" title=" " alt="" coords="450,107,206,155,205,150,449,101"/>
+<area shape="poly" title=" " alt="" coords="381,176,411,213,407,216,377,179"/>
+<area shape="poly" title=" " alt="" coords="418,175,604,219,603,225,417,180"/>
+<area shape="poly" title=" " alt="" coords="159,176,179,212,174,215,154,179"/>
+<area shape="poly" title=" " alt="" coords="79,104,83,138,88,158,97,176,121,199,149,217,146,221,117,204,93,179,83,160,77,139,74,104"/>
+<area shape="poly" title=" " alt="" coords="124,101,310,146,309,151,122,106"/>
+<area shape="poly" title=" " alt="" coords="90,102,130,140,126,144,87,106"/>
+<area shape="poly" title=" " alt="" coords="245,105,202,213,197,211,240,103"/>
+<area shape="poly" title=" " alt="" coords="268,102,339,143,337,147,266,106"/>
+<area shape="poly" title=" " alt="" coords="233,106,179,146,175,141,230,102"/>
+<area shape="poly" title=" " alt="" coords="357,107,217,219,213,214,353,102"/>
+<area shape="poly" title=" " alt="" coords="373,104,373,138,367,138,367,104"/>
+<area shape="poly" title=" " alt="" coords="335,107,199,150,197,145,334,101"/>
 </map>
 </div>
 </div>
@@ -167,7 +173,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_slave_manager_8cpp_source.html#l00013">13</a> of file <a class="el" href="_slave_manager_8cpp_source.html">SlaveManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_slave_manager_8cpp_source.html#l00014">14</a> of file <a class="el" href="_slave_manager_8cpp_source.html">SlaveManager.cpp</a>.</p>
 
 </div>
 </div>

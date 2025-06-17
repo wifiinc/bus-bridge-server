@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fan_0',['FAN',['../packets_8h.html#a87ca7b4499ea761999a872674eba32afa1da87abe947673580190ba507384ad37',1,'packets.h']]],
+  ['fan_0',['fan',['../unionsensor__packet_1_1sensor__data.html#a9cd5f34c29ba765516a7d91d1bb43a70',1,'sensor_packet::sensor_data::fan'],['../unionsensor__data.html#aeca46f634ccb0aca9dc3f1449309cc12',1,'sensor_data::fan'],['../packets_8h.html#a87ca7b4499ea761999a872674eba32afa1da87abe947673580190ba507384ad37',1,'FAN:&#160;packets.h']]],
   ['fandata_1',['FanData',['../_fan_slave_8h.html#a59b2260f3d1ee4387bf217d9456d1d61',1,'FanSlave.h']]],
   ['fanslave_2',['fanslave',['../class_fan_slave.html',1,'FanSlave'],['../class_fan_slave.html#a82a043f189c4d759e943d4d2769dc332',1,'FanSlave::FanSlave()']]],
   ['fanslave_2ecpp_3',['FanSlave.cpp',['../_fan_slave_8cpp.html',1,'']]],

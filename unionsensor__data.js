@@ -1,6 +1,7 @@
 var unionsensor__data =
 [
     [ "co2", "unionsensor__data.html#ab712b9bf21da554e119e42d33fbb09f8", null ],
+    [ "fan", "unionsensor__data.html#aeca46f634ccb0aca9dc3f1449309cc12", null ],
     [ "generic", "unionsensor__data.html#a47aa1a1e971662dc3a99f3a0f9482d7e", null ],
     [ "heartbeat", "unionsensor__data.html#ae70d3ba0418d0ca8f6f6155c0c82b44e", null ],
     [ "humidity", "unionsensor__data.html#a630d2bd531254c63f07e20694dff4478", null ],
